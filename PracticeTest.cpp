@@ -48,6 +48,7 @@ TEST(PracticeTest, is_ascending)
 	int i1 = 1;
 	int i2 = 2;
 	int i3 = 3;
-    obj.isPalindrome("a");
-    ASSERT_TRUE(actual);
+    obj.sortDescending(i1,i2,i3);
+    ASSERT_EQ(i1,3);
+	ASSERT_EQ(i2,2);
 }
