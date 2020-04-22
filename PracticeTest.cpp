@@ -70,6 +70,62 @@ TEST(PracticeTest, is_long_odd_not_palindrome)
     ASSERT_FALSE(actual);
 }
 
+TEST(PracticeTest, is_capital_short_even_palindrome)
+{
+    Practice obj;
+    bool actual = obj.isPalindrome("aA");
+    ASSERT_TRUE(actual);
+}
+
+TEST(PracticeTest, is_capital_short_even_not_palindrome)
+{
+    Practice obj;
+    bool actual = obj.isPalindrome("zA");
+    ASSERT_FALSE(actual);
+}
+
+TEST(PracticeTest, is_capital_long_even_palindrome)
+{
+    Practice obj;
+    bool actual = obj.isPalindrome("azzA");
+    ASSERT_TRUE(actual);
+}
+
+TEST(PracticeTest, is_capital_long_even_not_palindrome)
+{
+    Practice obj;
+    bool actual = obj.isPalindrome("zazA");
+    ASSERT_FALSE(actual);
+}
+
+TEST(PracticeTest, is_capital_short_odd_palindrome)
+{
+    Practice obj;
+    bool actual = obj.isPalindrome("zaZ");
+    ASSERT_TRUE(actual);
+}
+
+TEST(PracticeTest, is_capital_short_odd_not_palindrome)
+{
+    Practice obj;
+    bool actual = obj.isPalindrome("zaA");
+    ASSERT_FALSE(actual);
+}
+
+TEST(PracticeTest, is_capital_long_odd_palindrome)
+{
+    Practice obj;
+    bool actual = obj.isPalindrome("zazaZ");
+    ASSERT_TRUE(actual);
+}
+
+TEST(PracticeTest, is_capital_long_odd_not_palindrome)
+{
+    Practice obj;
+    bool actual = obj.isPalindrome("zaazZ");
+    ASSERT_FALSE(actual);
+}
+
 TEST(PracticeTest, is_single_letter_palindrome)
 {
     Practice obj;
