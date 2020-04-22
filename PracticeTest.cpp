@@ -87,21 +87,21 @@ TEST(PracticeTest, is_capital_short_even_not_palindrome)
 TEST(PracticeTest, is_capital_long_even_palindrome)
 {
     Practice obj;
-    bool actual = obj.isPalindrome("azzA");
+    bool actual = obj.isPalindrome("azZa");
     ASSERT_TRUE(actual);
 }
 
 TEST(PracticeTest, is_capital_long_even_not_palindrome)
 {
     Practice obj;
-    bool actual = obj.isPalindrome("zazA");
+    bool actual = obj.isPalindrome("zAza");
     ASSERT_FALSE(actual);
 }
 
 TEST(PracticeTest, is_capital_short_odd_palindrome)
 {
     Practice obj;
-    bool actual = obj.isPalindrome("zaZ");
+    bool actual = obj.isPalindrome("Zaz");
     ASSERT_TRUE(actual);
 }
 
@@ -115,14 +115,14 @@ TEST(PracticeTest, is_capital_short_odd_not_palindrome)
 TEST(PracticeTest, is_capital_long_odd_palindrome)
 {
     Practice obj;
-    bool actual = obj.isPalindrome("zazaZ");
+    bool actual = obj.isPalindrome("zazAz");
     ASSERT_TRUE(actual);
 }
 
 TEST(PracticeTest, is_capital_long_odd_not_palindrome)
 {
     Practice obj;
-    bool actual = obj.isPalindrome("zaazZ");
+    bool actual = obj.isPalindrome("zaAzz");
     ASSERT_FALSE(actual);
 }
 
