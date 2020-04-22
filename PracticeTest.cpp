@@ -45,9 +45,9 @@ TEST(PracticeTest, is_single_letter_palindrome)
 TEST(PracticeTest, is_ascending)
 {
     Practice obj;
-	int i1 = 1
-	int i2 = 2
-	int i3 = 3
+	int i1 = 1;
+	int i2 = 2;
+	int i3 = 3;
     obj.isPalindrome("a");
     ASSERT_TRUE(actual);
 }
